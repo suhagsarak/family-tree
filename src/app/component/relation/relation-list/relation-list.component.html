@@ -1,0 +1,21 @@
+<h2>Relations</h2>
+<div style="display: flex;">
+    <div style="width: 20%;"> Individual 1 Role Code </div>
+    <div style="width: 20%;"> Individual 2 Role Code </div>
+    <div style="width: 20%;"> Individual Id 1 </div>
+    <div style="width: 20%;"> Individual Id 2 </div>
+    <div style="width: 20%;"> Relation Code </div>
+    <div style="width: 20%;"> Relation Description </div>
+    <div style="width: 20%;"> Relation Name </div>
+</div>
+<div *ngFor="let relation of relations">
+    <div style="display: flex;">
+        <div style="width: 20%;">{{relation.individual_1_role_code}}</div>
+        <div style="width: 20%;">{{relation.individual_2_role_code}}</div>
+        <div style="width: 20%;">{{relation.individual_id_1}}</div>
+        <div style="width: 20%;">{{relation.individual_id_2}}</div>
+        <div style="width: 20%;">{{relation.relation_code}}</div>
+        <div style="width: 20%;">{{relation.relation_description}}</div>
+        <div style="width: 20%;">{{relation.relation_name}}</div>
+    </div>
+</div>

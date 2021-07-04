@@ -1,0 +1,13 @@
+<h2>Roles</h2>
+<div style="display: flex;">
+    <div style="width: 30%;">Role Code</div>
+    <div style="width: 30%;">Role Name</div>
+    <div style="width: 30%;">Role Description</div>
+</div>
+<div *ngFor="let role of roles">
+    <div style="display: flex;">
+        <div style="width: 30%;">{{role.role_code}}</div>
+        <div style="width: 30%;">{{role.role_name}}</div>
+        <div style="width: 30%;">{{role.role_description}}</div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<h2>Individuals</h2>
+<div style="display: flex;">
+    <div style="width: 30%;">ID</div>
+    <div style="width: 30%;">Name</div>
+    <div style="width: 15%;">Gender</div>
+    <div style="width: 30%;">Date of birth</div>
+    <div style="width: 15%;">Place of birth</div>
+    <div style="width: 20%;">Individual details</div>
+</div>
+<div *ngFor="let individual of individuals">
+    <div style="display: flex;">
+        <div style="width: 30%;">{{individual.individual_id}}</div>
+        <div style="width: 30%;">{{individual.first_name}} {{individual.last_name}}</div>
+        <div style="width: 15%;">{{individual.gender}}</div>
+        <div style="width: 30%;">{{individual.date_of_birth}}</div>
+        <div style="width: 15%;">{{individual.place_of_birth}}</div>
+        <div style="width: 20%;">{{individual.individual_details}}</div>
+    </div>
+</div>

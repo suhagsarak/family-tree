@@ -1,0 +1,21 @@
+<h2>Families</h2>
+<div style="display: flex;">
+    <div style="width: 20%;">Family Id</div>
+    <div style="width: 20%;">Family Head Id</div>
+    <div style="width: 20%;">Family Name</div>
+    <div style="width: 20%;">Family Description</div>
+    <div style="width: 20%;">Family Date From</div>
+    <div style="width: 20%;">Family Date To</div>
+    <div style="width: 20%;">Family Details</div>
+</div>
+<div *ngFor="let family of families">
+    <div style="display: flex;">
+        <div style="width: 20%;">{{family.family_id}}</div>
+        <div style="width: 20%;">{{family.family_head_id}}</div>
+        <div style="width: 20%;">{{family.familly_name}}</div>
+        <div style="width: 20%;">{{family.familly_description}}</div>
+        <div style="width: 20%;">{{family.familly_date_from}}</div>
+        <div style="width: 20%;">{{family.familly_date_to}}</div>
+        <div style="width: 20%;">{{family.familly_details}}</div>
+    </div>
+</div>
