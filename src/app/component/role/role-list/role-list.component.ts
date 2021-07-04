@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FamilyTreeService } from 'src/app/service/family-tree.service';
-
+import { Role } from 'src/app/model/role.interface'
 @Component({
   selector: 'app-role-list',
   templateUrl: './role-list.component.html',
@@ -8,14 +8,14 @@ import { FamilyTreeService } from 'src/app/service/family-tree.service';
 })
 export class RoleListComponent implements OnInit {
 
-  roles: any;
+  roles: Array<Role> = [];
 
   constructor(
     private familyTreeService: FamilyTreeService
   ) { }
 
   ngOnInit() {
-    this.familyTreeService.getAllRoles().subscribe((response) => {
+    this.familyTreeService.getAllRoles().subscribe((response: any) => {
       this.roles = response;
     });
   }

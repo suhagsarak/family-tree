@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Individual } from 'src/app/model/individual.interface';
 import { FamilyTreeService } from 'src/app/service/family-tree.service';
 
 @Component({
@@ -8,14 +9,14 @@ import { FamilyTreeService } from 'src/app/service/family-tree.service';
 })
 export class IndividualListComponent implements OnInit {
 
-  individuals: any;
+  individuals: Array<Individual> = [];
 
   constructor(
     private familyTreeService: FamilyTreeService
   ) { }
 
   ngOnInit() {
-    this.familyTreeService.getAllIndividuals().subscribe((response) => {
+    this.familyTreeService.getAllIndividuals().subscribe((response: any) => {
       this.individuals = response;
     });
   }
