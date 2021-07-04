@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "family-tree"
+  "defaultProject": "family-tree",
+  "cli": {
+    "analytics": "0df2aaae-9f82-493b-af3a-70ee73c6b78f"
+  }
 }
